@@ -1,6 +1,6 @@
 const products = [
   {id: 1, title: 'Notebook', price: 1000, img: 'https://placehold.it/200x150'},
-  {id: 2, title: 'Mouse', price: 100, img: 'https://placehold.it/200x150'},
+  {id: 2, title: 'Mouse', price: 120, img: 'https://placehold.it/200x150'},
   {id: 3, title: 'Keyboard', price: 250, img: 'https://placehold.it/200x150'},
   {id: 4, title: 'Gamepad', price: 150, img: 'https://placehold.it/200x150'},
 ];
