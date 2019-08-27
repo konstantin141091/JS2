@@ -1,0 +1,9 @@
+.hum__size, .hum__stuffing, .hum__topping, .hum__sum, .hum__cal {
+    font-size: 20px;
+    color: #807516;
+}
+
+.result__block {
+    width: 100%;
+    float: left;
+}
