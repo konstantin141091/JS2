@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Заполниете форму</h3>
+    <form action="#" id="form" class="form">
+        <p>Имя(Имя содержит только буквы)</p>
+        <input type="text" id="name">
+        <p>Телефон имеет вид +7(000)000-0000</p>
+        <input type="text" id="tel">
+        <p>E-mail</p>
+        <input type="email" id="email">
+        <p>Ваш текст</p>
+        <input type="textarea" id="text">
+        <input type="submit" id="btn" value="Отправить" class="button">
+        <p id="info"></p>
+    </form>
+</body>
+<script>
+    let name = document.getElementById('name');
+    let tel = document.getElementById('tel');
+    let email = document.getElementById('email');
+    let text = document.getElementById('text')
+    btn = document.getElementById('btn');
+    btn.addEventListener('click', () => checkForm());
+    function checkForm() {
+        console.log(/\W/i.test(name.value));
+        if (/\W/i.test(name.value)) {
+            name.classList.add('validation');
+        }
+        else {
+            if (/[\d_]/.test(name.value)) {
+                name.classList.add('validation');
+            } else {
+                name.classList.remove('validation');
+            }
+        }
+        if (/[+]7[(][0-9]{3}[)][0-9]{3}[-][0-9]{4}/.test(tel.value)) {
+            tel.classList.remove('validation');
+        } else {
+            tel.classList.add('validation');
+        }
+        if (/[a-z.-]+[@]{1}[a-z.-]+[.]ru/.test(email.value)) {
+            email.classList.remove('validation');
+        } else {
+            email.classList.add('validation');
+        }
+        if (text.value.length > 1) {
+            text.classList.remove('validation');
+        } else {
+            text.classList.add('validation');
+        }
+        const form = document.querySelectorAll('.validation');
+        if (form.length < 1) {
+            let info = document.getElementById('info');
+            info.textContent = 'Ваши данные прошли валидацию';
+        } else  {
+            info.textContent = 'Вы где-то ошиблись.';
+        }
+    }
+</script>
+</html>

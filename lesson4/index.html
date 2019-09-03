@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 4 - RegExp</title>
+</head>
+<body>
+<script>
+// Syntax 1
+// let regExp = new RegExp('выражение', 'флаги');
+// Syntax 2
+// let regExp = /выражение/флаги
+
+// Flags
+// i - поиск без учета регистра
+// g - множественный поиск
+// m - многострочный поиск
+
+let str = 'Язык JavaScript называется так из-за популярности языка Java';
+// let regExp = new RegExp('java', 'i');
+// console.log(regExp);
+
+// String methods
+// search
+// -1 - вхождений не найдено
+// Возвращает индекс первого вхождения
+// console.log(str.search(regExp)); // -1?
+
+// match
+// возвращает массив-бъект с подробной информацией если совпадение одно
+// если ничего не найдено то вернет null
+// console.log(str.match(/java/ig));
+
+// Replace (замена)
+// console.log('+7 (000)000-00-00'.replace('-', ':'));
+// console.log('+7 (000)000-00-00'.replace(/-/g, ':'));
+
+// let name = 'Snow, John';
+// console.log(name.replace(/([a-z]+), ([a-z]+)/i, '$2 $1'));
+// console.log(name.replace(/([a-z]+), ([a-z]+)/i, '$&'));
+
+// Классы
+// \d - [0123456789] - [0-9]
+// \D - [^0123456789] - [^0-9]
+// \w - [a-z0-9_]
+// \W
+// \s - space, tab, \n
+// \S
+// \b - граница слова
+// \B
+
+// Квантификаторы
+// {m} - строго m раз
+// {m,n} - от m до n раз
+// {m,} - от m до бесконечности
+// {,n} - от 0 до n раз
+// сокращения
+// + - {1,}
+// * - {0,}
+// ? - {0,1}
+
+// Границы слова
+// console.log('Язык JavaScript это не Java вам =)'.match(/\Bjava\b/i));
+
+// console.log('+7-(000) 000:00-00'.match(/\d+/g).join('')); // 70000000000
+// console.log('color colour'.match(/colou?r/g));
+// console.log('color colour colotr'.match(/colo[ut]?r/g));
+
+// Начало и конец строки
+// console.log('JavaScript это не Java'.match(/^java/i));
+// console.log('JavaScript это не Java'.match(/java$/i));
+
+// console.log('Chapter 7.2'.match(/\d\.\d/g));
+// console.log('Chapter 7F2'.match(/\d\.\d/g));
+
+// RegExp
+// test (true||false)
+// console.log(/java/i.test(str));
+// exec
+// let result;
+// let regExp = /java/ig;
+//
+// console.log(`Начальный lastIndex ${regExp.lastIndex}`);
+// while (result = regExp.exec(str)) {
+//   console.log(result);
+//   console.log(`Текущий lastIndex ${regExp.lastIndex}`);
+// }
+// console.log(`Конечный lastIndex ${regExp.lastIndex}`);
+</script>
+</body>
+</html>
