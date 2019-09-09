@@ -2,7 +2,7 @@ Vue.component('search', {
     data() {
         return {
             userSearch: '',
-            productsAPI: this.$root.$refs.error//вот здесь почему то undefined не знаю почему
+            productsAPI: this.$root.$refs.error,//вот здесь почему то undefined не знаю почему
             /**
              * Создали ссылку на API нашей корзины. Т.к. все компоненты у нас регистрируются в корневом экземпляре Vue,
              * то мы легко можем получить доступ к ним используя свойство $root.
