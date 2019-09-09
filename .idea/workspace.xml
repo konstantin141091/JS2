@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8c0db17-b60e-4f09-8ed4-b3186cdc5e5c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/project VUE/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/project VUE/js/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project VUE/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project VUE/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,20 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project VUE/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project VUE/js/ProductComp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="46" column="41" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="46" selection-end-column="41" />
+            <state relative-caret-position="107">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -45,9 +36,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project VUE/js/ProductComp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project VUE/js/CartComp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
+            <state relative-caret-position="442">
               <caret line="26" column="14" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="14" />
             </state>
           </provider>
@@ -62,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project VUE/js/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+            <state>
+              <caret column="21" selection-start-column="15" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -98,10 +98,10 @@
         <option value="$PROJECT_DIR$/project/css/style.css" />
         <option value="$PROJECT_DIR$/project/js/main.js" />
         <option value="$PROJECT_DIR$/project VUE/js/error.js" />
-        <option value="$PROJECT_DIR$/project VUE/index.html" />
         <option value="$PROJECT_DIR$/project VUE/js/main.js" />
-        <option value="$PROJECT_DIR$/project VUE/js/ProductComp.js" />
         <option value="$PROJECT_DIR$/project VUE/js/search.js" />
+        <option value="$PROJECT_DIR$/project VUE/js/ProductComp.js" />
+        <option value="$PROJECT_DIR$/project VUE/index.html" />
       </list>
     </option>
   </component>
@@ -181,12 +181,12 @@
       <workItem from="1566543024829" duration="652000" />
       <workItem from="1566795475774" duration="21722000" />
       <workItem from="1567155876231" duration="29029000" />
-      <workItem from="1567914968070" duration="10681000" />
+      <workItem from="1567914968070" duration="12737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62084000" />
+    <option name="totallyTimeSpent" value="64140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -319,6 +319,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/project VUE/js/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project VUE/js/CartComp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project VUE/js/error.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -326,31 +340,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project VUE/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project VUE/js/ProductComp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="46" column="41" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="46" selection-end-column="41" />
+        <state relative-caret-position="221">
+          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project VUE/js/CartComp.js">
+    <entry file="file://$PROJECT_DIR$/project VUE/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project VUE/js/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+        <state relative-caret-position="107">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
