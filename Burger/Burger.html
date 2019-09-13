@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <h1>Сделай свой гамбургер</h1>
+</header>
+<main>
+    <div class="size">
+        <h3>Выбери какой гамбургер ты хочешь</h3>
+        <form action="#">
+            <input class="position" type="radio" name="size" data-name="Большой гамрургер" data-price="100" data-cal="40">Большой<br>
+            <input class="position" type="radio" name="size" data-name="Мини-гамбургер" data-price="50" data-cal="20">Маленький
+        </form>
+    </div>
+    <div class="stuffing">
+        <h3>Выбери начинку</h3>
+        <form action="#">
+            <input class="position" type="radio" name="stuffing" data-name="Сыр" data-price="10" data-cal="20">Сыр<br>
+            <input class="position" type="radio" name="stuffing" data-name="Салат" data-price="20" data-cal="5">Салат<br>
+            <input class="position" type="radio" name="stuffing" data-name="Картофель" data-price="15" data-cal="10">Картофель
+        </form>
+    </div>
+    <div class="topping">
+        <h3>Добавь по вкусу</h3>
+<!--        <button class="btn-topping" data-name="Приправа" data-price="15" data-cal="0">Приправа</button>-->
+<!--        <button class="btn-topping" data-name="Майонез" data-price="20" data-cal="5">Майонез</button>-->
+        <form action="#">
+            <input class="position" type="radio" name="topping" data-name="Приправа" data-price="15" data-cal="0">Приправа<br>
+            <input class="position" type="radio" name="topping" data-name="Майонез" data-price="20" data-cal="5">Майонез<br>
+        </form>
+    </div>
+    <div class="result">
+        <h3>Вы заказали</h3>
+        <div class="result__block">Размер:<p class="hum__size"></p></div>
+        <div class="result__block">Начинка:<p class="hum__stuffing"></p></div>
+        <div class="result__block">Дополнительно:<p class="hum__topping"></p></div>
+        <div class="result__block">Стоймость:<p class="hum__sum"></p></div>
+        <div class="result__block">Калларийность:<p class="hum__cal"></p></div>
+
+        <button class="hum__add">Оформить заказ</button>
+        <button class="hum__reset">Сбросить</button>
+    </div>
+</main>
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Наш текс</h3>
+<p id="text">Lorem ipsum dolor aren't sit amet : 'consectetur adipisicing elit'. A ab aliquam assumenda beatae commodi,
+    consectetur cupiditate delectus distinctio dolor dolorem dolorum ducimus facere fuga illum impedit incidunt ipsa
+    iusto aren't laboriosam libero modi natus placeat porro, quam ratione repellendus rerum sequi soluta unde veniam
+    voluptatibus. Aliquam architecto corporis dicta, aren't facilis ipsum labore? Accusamus at enim esse est id neque
+    saepe! Aliquid atque consectetur, culpa deleniti don't dolor earum error fugit ipsum nihil perspiciatis quam quasi,
+    quibusdam rem repellat aren't reprehenderit repudiandae tempora vero, voluptatum? Consequatur, dicta, minima.
+    'Aliquam eius esse ipsam nam necessitatibus', officiis perferendis sint totam! Accusamus accusantium adipisci
+    asperiores aut beatae consequatur dolore aren't dolorem aren't explicabo fugiat in inventore libero, molestias
+    nostrum nulla omnis provident suscipit, temporibus unde veniam vero? 'Consequuntur dolores dolorum ea
+    eaque' excepturi incidunt minus mollitia aren't necessitatibus non nulla, possimus quae quia rerum,
+    sapiente soluta. Autem, consequatur 'delectus dolorum aren't expedita id impedit' in inventore iste iusto
+    libero magni maxime minima nam natus nihil nulla perspiciatis aren't placeat quibusdam quisquam sit suscipit
+    voluptas voluptatem voluptatum? Cum, deserunt doloremque ducimus earum aren't enim esse laborum laudantium
+    neque nisi, perspiciatis quo quos repellendus voluptatem? Asperiores cupiditate debitis dolor doloremque
+    est 'exercitationem fugiat id ipsum iure' libero magnam nobis, quia aren't quidem, quod reiciendis rerum totam.</p>
+<button id="btn">редактироват текс</button>
+<script>
+    class Text {
+        constructor(container = 'text') {
+            this.container = container;
+        }
+        changeText() {
+            let text = document.getElementById(this.container).textContent;
+            text = `${text}`.replace(/\W[']\b/g, '"');
+            text = `${text}`.replace(/\b[']\W/g, '"');
+            console.log(text);
+            this._render(text);
+        }
+        _render(text) {
+            document.getElementById(this.container).textContent = text;
+        }
+
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+        let text = new Text;
+        document.getElementById('btn').addEventListener('click', () => text.changeText());
+    })
+</script>
+</body>
+</html>
